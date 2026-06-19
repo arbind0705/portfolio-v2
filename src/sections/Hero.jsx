@@ -64,7 +64,10 @@ export const Hero = () => {
                         <Button size="lg">
                             Contact me <ArrowRight className="w-5 h-5" />
                         </Button>
-                        <AnimatedBorderButton />
+                        <AnimatedBorderButton>
+                            <Download className="w-5 h-5" />
+                            Download CV
+                        </AnimatedBorderButton>
                     </div>
                     {/* social links */}
                     <div className="flex items-center gap-4 animate-fade-in animation-delay-400">
@@ -108,19 +111,19 @@ export const Hero = () => {
                     Technologies and languages i work with
                 </p>
                 <div className="relative overflow-hidden">
-                        <div className="flex animate-marquee">
-                            {[...skills, ...skills].map((skill, idx) => (
+                    <div className="flex animate-marquee">
+                        {[...skills, ...skills].map((skill, idx) => (
                             <div key={idx} className="flex-shrink-0 px-8 py-4">
                                 <span className="text-xl font-semibold text-muted-foreground/50 hover:text-muted-foreground transition-colors">{skill}</span>
                             </div>
                         ))}</div>
                 </div>
             </div>
-            
+
         </div>
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-fade-in animate-delay-800">
             <a href="#about"
-            className="flex flex-col items-center gap-2 text-muted-foreground hover:text-primary ">
+                className="flex flex-col items-center gap-2 text-muted-foreground hover:text-primary ">
                 <span className="text-xs uppercase tracking-wider">Scroll</span>
                 <ChevronDown className="w-6 h-6 animate-bounce" />
 
