@@ -16,7 +16,7 @@ const testimonials = [
     },
 
     {
-        quote:"titan is one of the most patient and talented engineers working with him was a blast of experience",
+        quote:"bound by these chains of life what else can the final gift be then looking at the sun like you ",
         author:"Robo-chan",
         role: "CTO, Tech Innovator Inc.",
         avatar: "https://www.flaticon.com/free-icon/avatar_4874875"
