@@ -3,13 +3,16 @@ import { ArrowRight, ChevronDown, Download, GitBranch, Globe, Mail } from "lucid
 import { AnimatedBorderButton } from "../components/AnimatedBorderButton";
 
 const skills = [
-    "React",
-    "MongoDB",
+    "Python",
     "ML",
-    "llm",
+    "LLMs",
+    "React",
+    "TensorFlow",
+    "scikit-learn",
+    "PyTorch",
+    "MongoDB",
     "AWS",
     "DBMS",
-    "Python",
     "C++",
     "DSA"
 ];
@@ -17,7 +20,7 @@ export const Hero = () => {
     return (<section className="relative min-h-screen flex items-center overflow-hidden">
         {/* bg */}
         <div className="absolute inset-0">
-            <img src="hero-bg.jpg" alt="hero image" className="w-full h-full object-cover opacity-40" />
+            <img src="/hero-bg.jpg" alt="hero image" className="w-full h-full object-cover opacity-40" />
             <div className="absolute inset-0 bg-gradient-to-b from-background/20 via-background/80 to-background"></div>
         </div>
         {/* green dots */}
@@ -43,7 +46,7 @@ export const Hero = () => {
                 <div className="space-y-8">
                     <div className="animate-fade-in">
                         <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-primary">
-                            <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />Software work with react
+                            <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />Open to AI/ML Internships
                         </span>
                     </div>
                     {/* headline */}
@@ -56,34 +59,38 @@ export const Hero = () => {
                             </span>
                         </h1>
                         <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200">
-                            Hello! I'm Arbind Malava i am a robitics engineer at cgc 4th year , with also knowledge abiut software technology with web applications , application and stuffs welcome and explore my portfolio
+                            Hi, I'm Arbind Malava, a final-year CS student diving deep into AI/ML — building things like intelligent routing simulators and an AI-powered document summarizer to understand how these systems actually work. I also build full-stack, and started out in robotics, which still shapes how I approach problems.
                         </p>
                     </div>
                     {/* CTAS */}
                     <div className="flex flex-wrap items-center gap-4 animate-fade-in animation-delay-300">
-                        <Button size="lg">
+                        <a href="#contact">
+                            <Button size="lg">
                             Contact me <ArrowRight className="w-5 h-5" />
                         </Button>
+                        </a>
+                        <a href="/Arbind_Resume.pdf" download="Arbind_Malava_resume.pdf">
                         <AnimatedBorderButton>
                             <Download className="w-5 h-5" />
                             Download CV
                         </AnimatedBorderButton>
+                        </a>
                     </div>
                     {/* social links */}
                     <div className="flex items-center gap-4 animate-fade-in animation-delay-400">
                         <span className="text-sm text-muted-foreground"> Follow: </span>
                         {[
-                            { icon: GitBranch, href: "#" },
-                            { icon: Globe, href: "#" },
-                            { icon: Mail, href: "#" },
+                            { icon: GitBranch, href: "https://github.com/arbind0705" },
+                            { icon: Globe, href: "https://www.linkedin.com/in/arbind-malava-08a7b1283/" },
+                            { icon: Mail, href: "mailto:arbindmalava@gmail.com" },
                         ].map((social, idx) => (
-                            <a key={idx} href={social.href} className="p-2 erounded-full glass hover:bg-primary/10 hover:text-primary transition-all duration-300">
+                            <a key={idx} href={social.href} className="p-2 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all duration-300">
                                 {<social.icon className="w-5 h-5" />}</a>
                         ))}
                     </div>
                 </div>
                 {/* right section with img */}
-                <div className="relatice animate-fade-in animation-delay-300">
+                <div className="relative animate-fade-in animation-delay-300">
                     {/* profile image */}
                     <div className="relative max-w-md mx-auto">
                         <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-primary/30 via-transparent to-primary/10 blur-2xl animate-pulse" />
@@ -99,16 +106,16 @@ export const Hero = () => {
                             {/* stats Badge */}
                             <div className="absolute -top-4 -left-4 glass rounded-xl py-4 p-3 animate-float animation-delay-500">
                                 <div className="text-2xl font-bold text-primary">10+</div>
-                                <div className="text-xm text-muted-foreground">Projects</div>
+                                <div className="text-xs text-muted-foreground">Projects</div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             {/* skills section */}
-            <div className="mt-20 animate-fade-in animate-delay-600">
-                <p className="text-sm text-muted-forground mb-6 text-center">
-                    Technologies and languages i work with
+            <div className="mt-20 animate-fade-in animation-delay-600">
+                <p className="text-sm text-muted-foreground mb-6 text-center">
+                    Technologies and languages I work with
                 </p>
                 <div className="relative overflow-hidden">
                     <div className="flex animate-marquee">
@@ -121,7 +128,7 @@ export const Hero = () => {
             </div>
 
         </div>
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-fade-in animate-delay-800">
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-fade-in animation-delay-800">
             <a href="#about"
                 className="flex flex-col items-center gap-2 text-muted-foreground hover:text-primary ">
                 <span className="text-xs uppercase tracking-wider">Scroll</span>

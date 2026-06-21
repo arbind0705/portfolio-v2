@@ -1,25 +1,25 @@
-import { Code2 } from "lucide-react";
+import { Brain, Code2, Cpu, Compass } from "lucide-react";
 
 const highlights = [
     {
-        icon: Code2,
-        title: "Inovative",
-        description: "always creative with all the projects",
+        icon: Brain,
+        title: "AI/ML Focused",
+        description: "Building with LLMs and NLP pipelines, not just learning the theory.",
     },
     {
         icon: Code2,
-        title: "teamPlayer",
-        description: "always creative with all the projects",
+        title: "Full-Stack Capable",
+        description: "Comfortable end-to-end — React frontends to Flask backends and databases.",
     },
     {
-        icon: Code2,
-        title: "Inovative",
-        description: "always creative with all the projects",
+        icon: Cpu,
+        title: "Robotics Background",
+        description: "Hardware roots that shape how I think about systems and constraints.",
     },
     {
-        icon: Code2,
-        title: "Creative",
-        description: "always creative with all the projects",
+        icon: Compass,
+        title: "Versatile Problem Solver",
+        description: "Drawn to a wide range of problem types over repeating the same ones — keeps thinking sharp across domains.",
     },
 ];
 
@@ -29,31 +29,31 @@ export const About = () => {
     return (
         <section id="about" className="py-32 relative overflow-hidden">
             <div className="container mx-auto px-6 relative z-10">
-                <div className="grid lg:grid-col-2 gap-16 items-center">
+                <div className="grid  gap-16 items-center">
                     {/* left column */}
-                    <div className="space-y-*">
-                        <div className="animate-fade-in">
+                    <div className="space-y-8">
+                        <div className="text-center animation-fade-in">
                             <span className="text-secondary-foreground text-sm font-medium tracking-wider uppercase">About Me</span>
                         </div>
-                        <h2 className="text-4xl md:text-5xl font-bold leading-tight animate-fade-in animation-delay-100 text-secondary-foreground">
+                        <h2 className="text-4xl md:text-5xl font-bold leading-tight animate-fade-in animation-delay-100 text-secondary-foreground text-center">
                             Building the future,
                             <span className="font-serif italic font-normal text-white"> one component at a time.</span>
                         </h2>
                         <div className="space-y-4 text-muted-foreground animate-fade-in animate-delay-200">
                             <p>
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, temporibus amet perferendis deserunt libero harum vero vitae quae ipsa ducimus earum, repudiandae consectetur unde maiores laboriosam exercitationem quisquam nam ipsum.
+                                I'm a final-year Computer Science student with a habit of chasing whatever I don't understand yet — right now, that's AI/ML. Most of my recent projects sit at the intersection of LLMs and real systems: a personality-development platform that uses a local LLM to recommend content, and a legal document summarizer with a full NLP pipeline and source-traceable answers.
                             </p>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque quibusdam temporibus pariatur aliquam magni nesciunt sequi hic maxime repellat similique. Exercitationem laborum ex voluptatibus aliquid provident soluta excepturi incidunt ad?
+                               That curiosity doesn't stop at one layer of the stack. I build end-to-end — Python and Flask on the backend, React up front, FAISS or MongoDB wherever a project calls for it — because I'd rather understand a system from the database up than just the part users see.
                             </p>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, tenetur esse? Atque dolor explicabo, impedit qui laudantium esse recusandae aspernatur enim adipisci accusantium, fugiat modi natus, et eos. Nobis, assumenda?
+                                It started even earlier, with robotics and hardware — IoT projects, embedded systems, Raspberry Pi builds. That hands-on root is still where my instinct to take things apart and figure out how they work comes from, and it's the same instinct that's now pulling me deeper into AI.
                             </p>
                         </div>
 
                         <div className="glass rounded-2xl p-6 glow-border animate-fade-in animation-delay-300">
                             <p className="text-lg font-medium italic text-foreground">
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic, vero nisi! Error laboriosam porro iure ex consequatur saepe nostrum voluptas vel doloremque nam eaque dolores maxime, eos dolore fugit eligendi.
+                                I've always been more interested in taking things apart to see how they work than in just using them — these days, that means AI systems instead of circuit boards.
                             </p>
                         </div>
                     </div>
